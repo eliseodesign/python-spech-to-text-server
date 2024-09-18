@@ -8,7 +8,7 @@ from pydub import AudioSegment
 app = Flask(__name__)
 
 # Cargar el modelo Vosk preentrenado
-model = Model(r"C:\Users\eliseo\Documents\vosk-model-small-es-0.42\vosk-model-small-es-0.42")
+model = Model(r"C:\Users\..\vosk-model-small-es-0.42\vosk-model-small-es-0.42")
 
 @app.route('/transcribe', methods=['POST'])
 def transcribe_audio():
